@@ -13,6 +13,7 @@ app.config ['DEBUG'] = True
 # Hardcoded secret key (intentionally insecure)
 app.secret_key = "super_secret_key_do_not_share"
 app.config['DEBUG'] = True  # Debug mode enabled (intentionally insecure)
+app.run(debug=True)
 
 # Configure SQLite database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///task_management.db'
