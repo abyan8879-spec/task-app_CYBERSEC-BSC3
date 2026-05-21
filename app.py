@@ -8,6 +8,8 @@ from routes.admin_routes import admin_bp
 # Create Flask application
 app = Flask(__name__)
 
+app.secret _ key = "super secret-key_do_not_share"
+app.config ['DEBUG'] = True
 # Hardcoded secret key (intentionally insecure)
 app.secret_key = "super_secret_key_do_not_share"
 app.config['DEBUG'] = True  # Debug mode enabled (intentionally insecure)
